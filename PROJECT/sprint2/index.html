@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rainfall prediction</title>
+</head>
+
+<body>
+    <div class="login">
+        <center>
+            <h1>Rainfall Prediction</h1>
+        </center>
+
+        <h1>Please enter the following details<h1>
+                <form action="{{url_for('predict')}}" method="post">
+                    <label for="Location">Location:</label>
+                    <select id="Location" name="Location">
+                        <option value=albury>albury</option>
+                        <option value=4>badgery</option>
+                        <option value=10>cobar</option>
+                        <option value=11>coff</option>
+                        <option value=21>moree</option>
+                        <option value=24>newcastle</option>
+                        <option value=26>norah</option>
+                        <option value=27>pen</option>
+                        <option value=30>a</option>
+                        <option value=34>a</option>
+                        <option value=37>a</option>
+                        <option value=38>a</option>
+                        <option value=42>a</option>
+                        <option value=45>a</option>
+                        <option value=47>b</option>
+                        <option value=9>c</option>
+                        <option value=40>v</option>
+                        <option value=23>v</option>
+                        <option value=5>n</option>
+                        <option value=6>m</option>
+                        <option value=35>m</option>
+                        <option value=19>m</option>
+                        <option value=18>m</option>
+                        <option value=20>m</option>
+                        <option value=25>m</option>
+                        <option value=33>m</option>
+                        <option value=44>m</option>
+                        <option value=5>m</option>
+                        <option value=5>m</option>
+                    </select>&nbsp; &nbsp;
+                    <label for="MinTemp"></label>
+                    <input type="float" id="MinTemp" name="MinTemp" placeholder="MinTemp">
+                    <label for="MaxTemp"></label>
+                    <input type="float" id="MaxTemp" name="MaxTemp" placeholder="MaxTemp">
+                    <label for="Rainfall"></label>
+                    <input type="float" id="Rainfall" name="Rainfall" placeholder="Rainfall">
+                    <label for="Windspeed9am"></label>
+                    <input type="float" id="Windspeed9am" name="Windspeed9am" placeholder="Windspeed9am">
+                    <label for="Windgustspeed"></label>
+                    <input type="float" id="Windgustspeed" name="Windgustspeed" placeholder="Windgustspeed">
+                    <label for="Windspeed3pm"></label>
+                    <input type="float" id="Windspeed3pm" name="Windspeed3pm" placeholder="Windspeed3pm">
+                    <label for="Humidity9am"></label>
+                    <input type="float" id="Humidity9am" name="Humidity9am" placeholder="Humidity9am">
+                    <label for="Humidity3pm"></label>
+                    <input type="float" id="Humidity3pm" name="Humidity3pm" placeholder="Humidity3pm">
+                    <label for="Pressure9am"></label>
+                    <input type="float" id="Pressure9am" name="Pressure9am" placeholder="Pressure9am">
+                    <label for="Pressure3pm"></label>
+                    <input type="float" id="Pressure9pm" name="Pressure3pm" placeholder="Pressure3pm">
+                    <label for="Temp9am"></label>
+                    <input type="float" id="Temp9am" name="Temp9am" placeholder="Temp9am">
+                    <label for="Temp3pm"></label>
+                    <input type="float" id="Temp3pm" name="Temp3pm" placeholder="Temp3pm">
+                    
+         
+                    <label for="RainToday">RainToday:</label>
+                    <select id="RainToday" name="RainToday">
+                        <option value=2>YES</option>
+                        <option value=4>NO</option>
+                    </select> 
+                    <label for="Windgustdir">Windgustdir:</label>
+                    <select id="Windgustdir" name="Windgustdir">
+                        <option value=2>W</option>
+                    </select>
+                    <label for="Winddir9am">Winddir9am:</label>
+                    <select id="Winddir9am" name="Winddir9am">
+                        <option value=2>W</option>
+                    </select>
+                    <label for="Winddir3pm">Winddir3pm:</label>
+                    <select id="Winddir3pm" name="Winddir3pm">
+                        <option value=2>W</option>
+                    </select>
+
+
+
+
+
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-block btn-large"
+                        style="height:30px;width:200px"><B>PREDICT</B></button>
+                </form>
+                <br>
+                <br>
+                <br>
+
+    </div>
+</body>
+
+</html>
